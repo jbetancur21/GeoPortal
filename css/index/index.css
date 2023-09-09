@@ -1,0 +1,113 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides video {
+    border: 2px solid #71717100;
+    border-radius: 20px;
+  }
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.botonVideo {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 280px;
+  right: 450px;
+  width: 100%;
+  text-align: center;
+}
+.botonVideo button{
+  height: 30px;
+  font-size: 20px;
+  background-color: #309736;
+  border: 2px solid #71717100;
+  border-radius: 20px;
+  color: white;
+  width: 15%;
+  cursor: pointer;
+}
+
+.botonVideo button:hover{
+  height: 30px;
+  font-size: 20px;
+  background-color: #18771d;
+  border: 2px solid #71717100;
+  border-radius: 20px;
+  color: white;
+  width: 15%;
+  cursor: pointer;
+}
+
+
+/*------------------------------------------------------PANEL DOS*/
+.panel2{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  
+  border-radius: 15px;
+  border: #a5a5a549 solid 1px;
+  box-shadow: 1px 5px 10px rgba(197, 197, 197, 0.37);
+}
+
+.info2 {
+  width: 45%;
+  margin-left: 10%;
+}
+
+.info2 img{
+  padding-right: 5%;
+  width: 100%;
+}
+
+.info3 {
+  width: 45%;
+  padding-left: 5%;
+  padding-top: 12%;
+}
+
+.info3 .img1 img{
+  width: 20%;
+}
+
+.info3 .img2 img{
+  width: 20%;
+}
+
+.info3 .img3 img{
+  width: 20%;
+}
+
+.xp{
+  font-family: 'Prompt', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  display: flex;
+}
+
+.xp p{
+  padding-top: 5%;
+}
