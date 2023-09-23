@@ -47,17 +47,33 @@
 
 .form_login button {
     font-size: 20px;
+    width: 70%;
     font-weight: bold;
     font-family: 'Prompt', sans-serif;
     padding-left: 2%;
-    background-color: #309736;
+    background-color: #bebebe;
     color: white;
-    border: 2px #309736 solid;
+    border: 2px #bebebe solid;
     height: 45px;
     border-radius: 15px;
+    margin-top: 15%;
+
 }
 
 .form_login button:hover {
     color: black;
     box-shadow: 6px 8px 10px rgb(197, 197, 197);
+}
+
+.form_login a {
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: inherit;
+    /* Hereda el color del texto del elemento padre */
+    cursor: default;
+    text-align: left;
+}
+
+.form_login img {
+    width: 20%;
 }

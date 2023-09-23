@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css//index/index.css">
     <link rel="stylesheet" href="css/login/login.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="files/images/favicon.ico">
-    <title>INN | Iniciar Sesión</title>
-</head>
 
+    <title>INN | Inicio</title>
+</head>
 <body>
     <div class="contain">
         <!-- CABECERA DESPLEGABLE -->
@@ -30,28 +28,14 @@
             <img src="files/images/Logo.png" title="INN">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
-
-        <div class="main">
-
-            <div class="container">
-                <img src="https://media.licdn.com/dms/image/C4E0BAQEAY69oewvPuQ/company-logo_200_200/0/1619042533662?e=2147483647&v=beta&t=y-KzmcDCb0fK0IO7BnEtvXLeRBZCSHLNv1Gzomf-u9E" />
-                <div>
-                    <form class="form_login" onSubmit="">
-                        <label for="user">Nombre de Usuario</label>
-                        <input id="user" type="text" placeholder="Usuario" onChange="" value="" />
-                        <label for="password">Contraseña</label>
-                        <input id="password" type="password" placeholder="Contraseña" onChange="" value="" />
-                        <button type="submit">Iniciar Sesión</button>
-                    </form>
-                </div>
-            </div>
-
-
-
-
-        </div>
     </div><!-- FIN DEL CONTAINER -->
 </body>
+
 <script src="js/cabecera.js"></script>
+<script src="js//index/galeria.js"></script>
 
 </html>
+
+<?php
+include("php/AuthMicrosoft/Autenticacion.php");
+?>
