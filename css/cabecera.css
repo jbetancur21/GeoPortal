@@ -55,6 +55,10 @@
 }
 
 #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     z-index: 10;
     overflow: hidden;
     background-color: #309736;

@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
 
     <title>INN | Inicio</title>
 </head>
+
 <body>
     <div class="contain">
         <!-- CABECERA DESPLEGABLE -->
@@ -28,14 +30,27 @@
             <img src="files/images/Logo.png" title="INN">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
         </div>
+
+
+        <div class="container">
+            <img
+                src="https://media.licdn.com/dms/image/C4E0BAQEAY69oewvPuQ/company-logo_200_200/0/1619042533662?e=2147483647&v=beta&t=y-KzmcDCb0fK0IO7BnEtvXLeRBZCSHLNv1Gzomf-u9E" />
+            <div>
+                <form class="form_login" onSubmit="">
+
+                    <button type="submit"><img
+                            src="https://aid-frontend.prod.atl-paas.net/atlassian-id/front-end/5.0.486/static/media/microsoft-logo.42b61fa1.svg"><a
+                            href="?action=login">Continuar con Microsoft</a> </button>
+                </form>
+            </div>
+        </div>
     </div><!-- FIN DEL CONTAINER -->
 </body>
 
 <script src="js/cabecera.js"></script>
-<script src="js//index/galeria.js"></script>
 
 </html>
 
 <?php
-include("php/AuthMicrosoft/Autenticacion.php");
+include "php/AuthMicrosoft/Autenticacion.php";
 ?>
