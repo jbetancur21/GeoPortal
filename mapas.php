@@ -45,6 +45,10 @@ if ($varsesion != null || $varsesion != '') {
                 <a class="active" href="mapas.php"><i class="fa fa-solid fa-map"></i> Mis Mapas</a>
                 <a href="capas.php"><i class="fa fa-solid fa-shapes"></i> Mis Capas</a>
             </div>
+            <?php 
+                include_once("php/Conexion.php");
+                CConexion::ConexionBD();
+            ?>
         </div>
     </div><!-- FIN DEL CONTAINER -->
 </body>
