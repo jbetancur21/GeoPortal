@@ -58,7 +58,21 @@
     text-align: left;
     padding: 20px;
   }
+  
+  .tableMaps .boton{
+    float: right;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
+  .tableMaps .boton:hover {
+    color: white;
+    background-color: #309736;
+  }
   
   /* Add responsiveness - will automatically display the navbar-mapas vertically instead of horizontally on screens less than 500 pixels */
   @media screen and (max-width: 500px) {

@@ -47,6 +47,8 @@ include "php/Conexion.php";
             </div>
 
             <div class="tableMaps">
+            <a class="boton" href="visor.php"><i class="fa fa-solid fa-shapes"></i> Subir Capa</a>
+                <br><br><br>
 
 <table>
 

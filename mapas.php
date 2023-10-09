@@ -48,9 +48,9 @@ include "php/Conexion.php";
             </div>
 
             <div class="tableMaps">
-
+                <a class="boton" href="visor.php"><i class="fa fa-solid fa-map"></i> Crear Mapa</a>
+                <br><br><br>
                 <table>
-
                     <thead>
                         <tr>
                             <th>Nombre</th>

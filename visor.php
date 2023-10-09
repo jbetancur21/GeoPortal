@@ -28,12 +28,14 @@ include "php/Conexion.php";
 
     <!-- AZURE MAPS -->
     <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
-<!--     <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css">
+    <!--     <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css">
     <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.js"></script>
     <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script> 
     <script src="js/visor/visorAzure.js"></script>-->
 
-    <script src="js/visor/ol7/ol.js"></script>
+
+    <link rel="stylesheet" href="js/visor/ol/ol.css">
+    <!-- <script src="js/visor/ol7/source/BingMaps.js"></script> -->
     <link rel="stylesheet" href="js/visor/ol7/ol.css">
     <link rel="shortcut icon" href="files/images/favicon.ico">
 
@@ -41,6 +43,7 @@ include "php/Conexion.php";
 </head>
 
 <!-- <body onload="GetMap()"> -->
+
 <body>
     <div class="contain">
 
@@ -54,14 +57,18 @@ include "php/Conexion.php";
 
         <div class="mapas">
             <div class="sidenav">
-                <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="mapas.php"><i class="fa-solid fa-arrow-left"></i></a>
+                
             </div>
 
-            <div class="main" id="map"></div>
+            <div class="main">
+                <div id="map"></div>
+                <p id="mouse-position"></p>
+            </div>
 
         </div>
     </div><!-- FIN DEL CONTAINER -->
-    <script src ="js/visor/app.js"></script>
+    <script type="module" src="js/visor/app.js"></script>
 </body>
 <script src="https://kit.fontawesome.com/0b76b502ca.js" crossorigin="anonymous"></script>
 
