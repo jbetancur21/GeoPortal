@@ -5,11 +5,11 @@ include "php/AuthMicrosoft/Autenticacion.php";
 if ($varsesion != null || $varsesion != '') {
 
 } else {
-    echo "<script type=text/javascript> alert('Inicie sesión para poder ingresar');
+    echo "<script type=text/javascript> alert('Inicie sesión para poder ver la información');
         window.location.href='index.php';</script>";
     die();
 }
-
+include "php/Conexion.php";
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +45,38 @@ if ($varsesion != null || $varsesion != '') {
                 <a href="mapas.php"><i class="fa fa-solid fa-map"></i> Mis Mapas</a>
                 <a class="active" href="capas.php"><i class="fa fa-solid fa-shapes"></i> Mis Capas</a>
             </div>
+
+            <div class="tableMaps">
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Tipo de Capa</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+        $query = "Select * from poligono";
+        $consulta = pg_query($conexion, $query);
+
+        while ($list = pg_fetch_object($consulta)) {
+    ?>
+    <tr>
+        <td><?php echo $list->nombre; ?></td>
+        <td>Poligono</td>
+        <td><a href=""><i class="fa fa-regular fa-eye"></i></a></td>
+    </tr>
+    </tbody>
+    <?php }?>
+
+</table>
+
+
+</div>
+
         </div>
     </div><!-- FIN DEL CONTAINER -->
 </body>
